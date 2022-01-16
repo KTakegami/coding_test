@@ -116,11 +116,10 @@ class BingoApp
     /**
      * ビンゴの結果を返す
      *
-     * @param integer $size
      * @param array $search_resuluts
-     * @return void
+     * @return bool
      */
-    public function getBingoResult(array $search_resuluts)
+    public function getBingoResult(array $search_resuluts): bool
     {
         rsort($search_resuluts);
         /**
